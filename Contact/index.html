@@ -17,7 +17,7 @@
   <ul class="ul">
     <li><a href="/">Home</a></li>
     <li><a href="/dev-info">Dev Info</a></li>
-    <li><a href="/#bat"><span>About us</span></a></li>
+    <li><a href="#bat"><span>About us</span></a></li>
     <li><a href="/Contact">Contact</a></li>
   </ul>
   <div class="ham">
@@ -39,15 +39,16 @@
   </div>
 </section>
 <div id="line"></div>
-<section class="s2">
-  <h2>Contact <span>Information</span></h2>
 <form id="for" 
   action="https://formspree.io/f/mzbqgjwy"
   method="POST">
+<section class="s2">
+  <h2>Contact <span>Information</span></h2>
+
 <ul class="u">
-  <li><label for="">Name/Business:</label><br><input type="text"></li>
-  <li><label for="">Email:</label><br><input type="email"></li>
-  <li><label for="">Phone Number:</label><br><input type="text"></li>
+  <li><label for="">Name/Business:</label><br><input type="text" name="email"></li>
+  <li><label for="">Email:</label><br><input type="email" name="email"></li>
+  <li><label for="">Phone Number:</label><br><input type="text" name="Phone"></li>
   <div class="g-recaptcha" data-sitekey="6Le7Hs4kAAAAAGZMbZcuPp6UH6wAYhD71iBBqqUE"></div>
 </ul>
   <button type="submit">Submit</button>
