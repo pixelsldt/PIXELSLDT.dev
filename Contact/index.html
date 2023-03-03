@@ -19,6 +19,14 @@
 
   gtag('config', 'G-JKPPJ1EEB3');
 </script>
+<script>
+window.onload = function() { 
+  var el = document.getElementById('g-recaptcha-response'); 
+  if (el) { 
+    el.setAttribute('required', 'required'); 
+  } 
+}
+</script>
 </head>
 <body>
 <nav>
@@ -49,16 +57,18 @@
   </div>
 </section>
 <div id="line"></div>
+
 <form id="for" 
   action="https://formspree.io/f/mzbqgjwy"
-  method="POST">
+  method="POST"
+  enctype="multipart/form-data">
 <section class="s2">
   <h2>Contact <span>Information</span></h2>
 
 <ul class="u">
-  <li><label for="">Name/Business:</label><br><input type="text" name="email"></li>
-  <li><label for="">Email:</label><br><input type="email" name="email"></li>
-  <li><label for="">Phone Number:</label><br><input type="text" name="Phone"></li>
+  <li><label for="">Name/Business:</label><br><input required type="text" name="name"></li>
+  <li><label for="">Email:</label><br><input required type="email" name="email"></li>
+  <li><label for="">Message:</label><br><input required type="text" name="Message"></li>
   <div class="g-recaptcha" data-sitekey="6Le7Hs4kAAAAAGZMbZcuPp6UH6wAYhD71iBBqqUE"></div>
 </ul>
   <button type="submit">Submit</button>
