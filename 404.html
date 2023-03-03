@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="st.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <title>PixelsLtd</title>
@@ -18,12 +19,13 @@
 
   gtag('config', 'G-JKPPJ1EEB3');
 </script>
+<script>console.log('I think you are lost')</script>
 </head>
 <body>
 <nav>
   <a href="/"><img id="logo" src="img/logo.svg" alt=""></a>
   <ul class="ul">
-    <li><a href="/"  class="active">Home</a></li>
+    <li><a href="/" class="active">Home</a></li>
     <li><a href="/dev-info">Dev Info</a></li>
     <li><a href="#bat"><span>About us</span></a></li>
     <li><a href="/Contact">Contact</a></li>
@@ -37,7 +39,7 @@
 <!--Navbar all finished  -->
 <section class="s1">
 <h1>404<span> Page Not Found</span></h1>
-  <p>Sorry we cannot locate this page.</p>
+  <p><span class="typed"></span></p>
 </section>
 <footer>
   <ul>
@@ -55,7 +57,14 @@
   </ul>
 </footer>
 
-
+<script>
+  var typed = new Typed(".typed", {
+      strings: ["Sorry that page cannot be found."],
+      typeSpeed: 120,
+      smartBackspace: false,
+      loop: false
+  });
+</script>
 <script src="home.js"></script>
 
 </body>
