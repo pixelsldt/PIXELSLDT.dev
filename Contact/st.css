@@ -373,6 +373,11 @@ footer p {
 footer a p {
   color: #000000;
 }
+footer a p:hover{
+  color: #444FAF;
+  font-weight: 500;
+  text-decoration: underline;
+}
 
 
 @media (max-width: 900px) {
@@ -393,6 +398,4 @@ footer a p {
   z-index: -999999;
   opacity: 0;
 }
-input[:required]{
-  color:red;
-}
+
