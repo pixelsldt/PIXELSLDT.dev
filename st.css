@@ -131,7 +131,9 @@ margin-top: 4rem;
     color: #2D6CA7;
 
   }
-  
+  .active{
+    color: white;
+  }
 /* above nav finshed {DO NOT TUCH}26.02.23 */
 /* section 1 */
 .s1 {
