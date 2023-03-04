@@ -455,6 +455,10 @@ flex-direction: column;
   .decor h3{
     text-align: center;
   }
+  .decor p {
+    width: 70%;
+    margin: auto;
+    }
   .decor1{
     flex-direction: column;
     text-align: center;
@@ -462,6 +466,10 @@ flex-direction: column;
   .decor1 h3 {
     text-align: center;
   }
+  .decor p {
+    width: 70%;
+    margin: auto;
+    }
 }
 .decor1 p span {
   color: #000000;
